@@ -1,0 +1,32 @@
+main{
+    width: 100%;
+}
+
+#explore{
+    border: 1px solid black;
+    height: 50px;
+}
+
+#how_to{
+    border: 1px solid black;
+    height: 50px;
+}
+
+#restaurants{
+    border: 1px solid black;
+    height: 50px;
+
+    .menu_image{
+        border: 1px solid black;
+        height: 250px;
+        object-fit: cover;
+        object-position: 70%;
+        width: 100%;
+    }
+}
+
+footer{
+    
+    border: 1px solid black;
+    height: 250px;
+}

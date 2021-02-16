@@ -1,34 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
 main {
   width: 100%;
 }
 
 #explore {
   border: 1px solid black;
+  height: 200px;
+}
+
+#explore #location {
+  text-align: center;
+  background-color: #efefef;
   height: 50px;
 }
 
 #how_to {
   border: 1px solid black;
+  height: 250px;
+  text-align: center;
+}
+
+#how_to h3 {
+  border: 1px solid black;
+}
+
+#how_to p {
+  border: 1px solid black;
+  border-radius: 25px;
   height: 50px;
+  text-align: center;
 }
 
 #restaurants {
   border: 1px solid black;
-  height: 50px;
+  padding: 10px 10px 30px 10px;
+  background: #f6f6f6;
+}
+
+#restaurants #rest_title {
+  padding: 10px 0 10px 15px;
+  border: 1px solid black;
 }
 
 #restaurants .menu_image {
   border: 1px solid black;
-  height: 250px;
+  height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 70%;
      object-position: 70%;
   width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.menu {
+  border: 1px solid black;
+  margin: 15px;
+  border-radius: 15px;
+  background: white;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.description .rest_desc {
+  width: 70%;
+  padding: 5px 0 0 10px;
+}
+
+.description .rest_desc h3 {
+  margin: 0;
+}
+
+.description .rest_desc p {
+  margin: 3px 0 5px 0;
+}
+
+.description .heart {
+  font-size: 25px;
+  width: 30%;
+  padding: 5px;
 }
 
 footer {
   border: 1px solid black;
-  height: 250px;
+  height: 200px;
+  color: white;
+  background: grey;
+}
+
+footer .logo_footer {
+  font-family: "Shrikhand", cursive;
+  font-size: large;
+  margin: 25px;
 }
 /*# sourceMappingURL=style.css.map */

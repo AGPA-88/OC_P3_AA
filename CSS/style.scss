@@ -1,105 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+$footer-color:#353535;
+$background-color: #f6f6f6;
+$active-color: #f5edff;
+$purple-color: #9356dc;
+$btn-color: #b160dc;
+
+//reset
+body, html{
+    margin: 0;
+    padding: 0;
+}
 
 h1{
     font-family: 'Shrikhand', cursive;
 }
 
-main{
-    width: 100%;
-}
+.btn{
+    min-width: 150px;
+    padding: 0 15px 0 15px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(#f5edff,#9356dc);
 
-#explore{
-    border: 1px solid black;
-    height: 200px;
-    ;
-
-    #location{
-        text-align: center;
-        background-color: #efefef;
-        height: 50px;
-    }
-
-}
-
-#how_to{
-    border: 1px solid black;
-    height: 250px;
-    text-align: center;
-
-    h3{
-        border: 1px solid black;
-    }
-
-    p{
-        border: 1px solid black;
-        border-radius: 25px;
-        height: 50px;
-        text-align: center;
-    }
-}
-
-#restaurants{
-    border: 1px solid black;
-    padding: 10px 10px 30px 10px;
-    background: #f6f6f6;
-
-    #rest_title{
-        padding: 10px 0 10px 15px;
-        border: 1px solid black;
-    }
-
-    .menu_image{
-        border: 1px solid black;
-        height: 180px;
-        object-fit: cover;
-        object-position: 70%;
-        width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;     
-    }
-}
-
-.menu{
-    border: 1px solid black;
-    margin: 15px;
-    border-radius: 15px;
-    background: white;  
-}
-
-.description{
-    display: flex;
-    width: 100%;
-      
-
-    .rest_desc{
-        width: 70%;
-        padding: 5px 0 0 10px;
-
-        h3{
-            margin: 0;
-        }
-        p{
-            margin: 3px 0 5px 0;
-        }
-        
-    }
-
-    .heart{
-        font-size: 25px;
-        width: 30%;
-        padding: 5px;
-    }
 }
 
 footer{
-    border: 1px solid black;
-    height: 200px;
+    
     color: white;
-    background: grey;
+    background: $footer-color;
     
     .logo_footer{
         font-family: "Shrikhand", cursive;
         font-size: large;
         margin: 25px;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0 0 0 10px;
+        margin-bottom: 30px;
+        li{
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+    }
+    i{
+        
+        width: 30px;
     }
 }

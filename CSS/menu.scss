@@ -1,0 +1,130 @@
+/*BASTILLE PAGE*/
+@import "style.scss";
+
+body{
+    background-color: #fff;
+}
+
+#logo{
+    display: flex;
+    
+    
+    .back_icon{
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .logo_menu{
+        display: flex;
+        justify-content: center;
+        font-family: "Shrikhand", cursive;
+        font-size: 30px;
+        margin-left: -40px;
+        width: 100%;
+
+    }
+}
+
+.menu{
+    background: green; 
+    width: 100%;
+    
+}
+.menu_image{
+    height: 250px;
+    width: 100%;    
+    background-image: url("../images/restaurants/bastille.jpg"); 
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.separator{
+    background: $background-color;
+    height: 50px;
+    border-top-left-radius: 100px ;
+    border-top-right-radius: 100px;
+    margin-top: -50px;
+}
+
+.rest_menu{
+    background: $background-color;
+    margin-top: -25px;
+    /*display: flex;
+    flex-flow: wrap;*/
+
+    .heart{
+        font-size: 25px;
+        width: 30%;
+        padding: 0 0 0 350px;
+        margin-top: -55px;
+
+        i{
+            &:hover {
+                background: pink;
+                color: hotpink;
+              }
+        }
+
+    }
+
+    h1{
+        text-align: left;
+
+    }
+
+    h3{  
+        text-align: left;
+        text-decoration: underline;
+        font-weight: normal;
+    }
+
+    .entrees{
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .main_dish{
+        border: 1px solid black;
+    }
+
+    .desserts{
+        border: 1px solid black;
+    }
+
+    .btn{
+        margin-left: 30%;
+    }
+}
+
+.options{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: #fff;
+    //max-height: 70px;
+    //max-width: 350px;
+
+    .options_title{
+        text-align: left;
+        min-width: 400px;
+    }
+
+    .options_description{
+        text-align: left;
+        min-width: 350px;
+    }
+
+    .options_price{
+        text-align: right;
+
+        &:hover{
+            background: green;
+        }
+    }
+
+
+
+}

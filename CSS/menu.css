@@ -1,0 +1,173 @@
+/*BASTILLE PAGE*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.btn {
+  min-width: 150px;
+  padding: 0 15px 0 15px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#f5edff));
+  background: linear-gradient(#9356dc, #f5edff);
+}
+
+footer {
+  color: white;
+  background: #353535;
+}
+
+footer .logo_footer {
+  font-family: "Shrikhand", cursive;
+  font-size: large;
+  margin: 25px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin-bottom: 30px;
+}
+
+footer ul li {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+footer i {
+  width: 30px;
+}
+
+body {
+  background-color: #fff;
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logo .back_icon {
+  padding: 15px;
+  text-decoration: none;
+}
+
+#logo .logo_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  margin-left: -40px;
+  width: 100%;
+}
+
+.menu {
+  background: green;
+  width: 100%;
+}
+
+.menu_image {
+  height: 250px;
+  width: 100%;
+  background-image: url("../images/restaurants/bastille.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.separator {
+  background: #f6f6f6;
+  height: 50px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: -50px;
+}
+
+.rest_menu {
+  background: #f6f6f6;
+  margin-top: -25px;
+  /*display: flex;
+    flex-flow: wrap;*/
+}
+
+.rest_menu .heart {
+  font-size: 25px;
+  width: 30%;
+  padding: 0 0 0 350px;
+  margin-top: -55px;
+}
+
+.rest_menu .heart i:hover {
+  background: pink;
+  color: hotpink;
+}
+
+.rest_menu h1 {
+  text-align: left;
+}
+
+.rest_menu h3 {
+  text-align: left;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.rest_menu .entrees {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.rest_menu .main_dish {
+  border: 1px solid black;
+}
+
+.rest_menu .desserts {
+  border: 1px solid black;
+}
+
+.rest_menu .btn {
+  margin-left: 30%;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.options .options_title {
+  text-align: left;
+  min-width: 400px;
+}
+
+.options .options_description {
+  text-align: left;
+  min-width: 350px;
+}
+
+.options .options_price {
+  text-align: right;
+}
+
+.options .options_price:hover {
+  background: green;
+}
+/*# sourceMappingURL=menu.css.map */

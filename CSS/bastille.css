@@ -1,0 +1,62 @@
+/*BASTILLE PAGE*/
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logo .back_icon {
+  padding: 15px;
+}
+
+#logo .logo_menu {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.menu_bast {
+  margin: 0 !important;
+  background: white;
+  width: 100%;
+}
+
+.menu_bast .menu_image {
+  border: 1px solid black;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70%;
+     object-position: 70%;
+  width: 100%;
+}
+
+.menu_bast .rest_menu {
+  border: 1px solid black;
+}
+
+.menu_bast .rest_menu h1 {
+  text-align: left;
+}
+
+.menu_bast .rest_menu h3 {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.menu_bast .rest_menu .entrees {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.menu_bast .rest_menu .main_dish {
+  border: 1px solid black;
+}
+
+.menu_bast .rest_menu .desserts {
+  border: 1px solid black;
+}
+
+/*BASTILLE PAGE*/
+/*# sourceMappingURL=bastille.css.map */

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ohmyfood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css">
 
     <script
         src="https://kit.fontawesome.com/5c5dbe00ab.js"
@@ -16,27 +16,101 @@
     <body>      
         <header>
             <div id="logo">
-                <img class="logo" alt="logo" src="images/logo/ohmyfood.png">
+                <div class="back_icon"><a href="index.html"><i class="fas fa-arrow-left"></i></a></div>
+                <div class="logo_menu" alt="logo">ohmyfood</div>
             </div>
         </header>
 
         <main>
-            <div class="menu">
-                <img class="menu_image" src="images/restaurants/bastille.jpg" alt="Bastille">
+            <div class="menu_image">
+              <!-- <img class="menu_image" src="images/restaurants/bastille.jpg" alt="Bastille">--> 
             </div>
-            <div>
+            <div class="separator"></div>
+            <div class="rest_menu">
                 <h1>Bastille</h1>
+
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <div class="entrees">
+                    <h3>Entrees</h3>
+                    <div class="options">
+                        <h4 class="options_title">Citrus Squid Carpaccion</h4>
+                        <p class="options_description">with orange zest</p>
+                        <div class="options_price">25€</div>
+                    </div>
+
+                    <div class="options">
+                        <h4 class="options_title">Grandmother's Vegetable Soup</h4>
+                        <p class="options_description">Carrots, parsnips, Jerusalem rtichoke</p>
+                        <div class="options_price">35€</div>
+                    </div>
+                    
+                    <div class="options">
+                        <h4 class="options_title">Onion Soup</h4>
+                        <p class="options_description">Revisited</p>
+                        <div class="options_price">20€</div>
+                    </div>
+                    
+                </div>
+
+                <div class="main_dish">
+                    <h3>Main Dish</h3>
+                    <div class="options">
+                        <h4 class="options_title">Scallops</h4>
+                        <p class="options_description">with mashed parsnip</p>
+                        <div class="options_price">40€</div>
+                    </div>
+
+                    <div class="options">
+                        <h4 class="options_title">Magret de canard</h4>
+                        <p class="options_description">with mashed potatoes</p>
+                        <div class="options_price">35€</div>
+                    </div>
+
+                    <div class="options">
+                        <h4 class="options_title">Game Hen</h4>
+                        <p class="options_description">with vegetable gnocchis</p>
+                        <div class="options_price">20€</div>
+                    </div>
+                </div>
+
+                <div class="desserts">
+                    <h3>Desserts</h3>
+                    <div class="options">
+                        <h4 class="options_title">Foral Ice Cream</h4>
+                        <p class="options_description">with hazelnut butter</p>
+                        <div class="options_price">18€</div>
+                    </div>
+
+                    <div class="options">
+                        <h4 class="options_title">Chocolate Lava Cake</h4>
+                        <p class="options_description">Revisited</p>
+                        <div class="options_price">22€</div>
+                    </div>
+
+                    <div class="options">
+                        <h4 class="options_title">Napolean</h4>
+                        <p class="options_description">with blueberries and marzipan</p>
+                        <div class="options_price">23€</div>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn">Order</button>
+                </div>
             </div>
         </main>
 
         <footer>
             <div>
                 <div>
-                    <img class="logo_footer" alt="logo" src="images/logo/ohmyfood.png">
+                    <div class="logo_footer" alt="logo">ohmyfood</div>
                 </div>
                 <ul>
-                    <li>Suggest a restaurant</li>
-                    <li>Become a partner</li>
+                    <li><i class="fas fa-utensils"></i>Suggest a restaurant</li>
+                    <li><i class="fas fa-hands-helping"></i>Become a partner</li>
                     <li>Legal</li>
                     <li>Contact</li>
                 </ul>

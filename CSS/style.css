@@ -1,106 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: 'Shrikhand', cursive;
 }
 
-main {
-  width: 100%;
-}
-
-#explore {
-  border: 1px solid black;
-  height: 200px;
-}
-
-#explore #location {
-  text-align: center;
-  background-color: #efefef;
+.btn {
+  min-width: 150px;
+  padding: 0 15px 0 15px;
   height: 50px;
-}
-
-#how_to {
-  border: 1px solid black;
-  height: 250px;
-  text-align: center;
-}
-
-#how_to h3 {
-  border: 1px solid black;
-}
-
-#how_to p {
-  border: 1px solid black;
+  line-height: 50px;
   border-radius: 25px;
-  height: 50px;
-  text-align: center;
-}
-
-#restaurants {
-  border: 1px solid black;
-  padding: 10px 10px 30px 10px;
-  background: #f6f6f6;
-}
-
-#restaurants #rest_title {
-  padding: 10px 0 10px 15px;
-  border: 1px solid black;
-}
-
-#restaurants .menu_image {
-  border: 1px solid black;
-  height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 70%;
-     object-position: 70%;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.menu {
-  border: 1px solid black;
-  margin: 15px;
-  border-radius: 15px;
-  background: white;
-}
-
-.description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.description .rest_desc {
-  width: 70%;
-  padding: 5px 0 0 10px;
-}
-
-.description .rest_desc h3 {
-  margin: 0;
-}
-
-.description .rest_desc p {
-  margin: 3px 0 5px 0;
-}
-
-.description .heart {
-  font-size: 25px;
-  width: 30%;
-  padding: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5edff), to(#9356dc));
+  background: linear-gradient(#f5edff, #9356dc);
 }
 
 footer {
-  border: 1px solid black;
-  height: 200px;
   color: white;
-  background: grey;
+  background: #353535;
 }
 
 footer .logo_footer {
   font-family: "Shrikhand", cursive;
   font-size: large;
   margin: 25px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin-bottom: 30px;
+}
+
+footer ul li {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+footer i {
+  width: 30px;
 }
 /*# sourceMappingURL=style.css.map */

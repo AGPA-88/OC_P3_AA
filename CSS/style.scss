@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 $footer-color:#353535;
 $background-color: #f6f6f6;
 $active-color: #f5edff;
@@ -22,6 +24,8 @@ h1{
     line-height: 50px;
     border-radius: 25px;
     background: linear-gradient(#f5edff,#9356dc);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 
 }
 

@@ -1,5 +1,6 @@
 /*BASTILLE PAGE*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body, html {
   margin: 0;
   padding: 0;
@@ -15,8 +16,8 @@ h1 {
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#f5edff));
-  background: linear-gradient(#9356dc, #f5edff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5edff), to(#9356dc));
+  background: linear-gradient(#f5edff, #9356dc);
 }
 
 footer {

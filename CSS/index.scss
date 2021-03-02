@@ -11,24 +11,25 @@ body{
 .logo{
     width: 50%;
     margin-left: 25%;
-    margin-right: 25%   ;
+    margin-right: 25%;
 }
 
 #top_menu{
-    border: 1px solid black;
     min-height: 250px;
-    ;
+    background: $background-color;
 
     #location{
         text-align: center;
-        background-color: $background-color;
+        background-color: #eaeaea;
         height: 50px;
+        font-family: 'Roboto', sans-serif;
     }
 
     #explore{
         display: flex;
         flex-direction: column;
         text-align: center;
+        font-family: 'Roboto', sans-serif;
 
     }
 
@@ -41,15 +42,18 @@ body{
     display: flex;
     flex-direction: column;
     padding: 15px;
+    
 
     h3{
-        border: 1px solid black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
         text-align: left;
         margin-left: -9px;
     }
 
     p{
         border: 1px solid black;
+        font-family: 'Roboto', sans-serif;
         border-radius: 25px;
         height: 50px;
         text-align: center;
@@ -57,29 +61,34 @@ body{
 
     .how_look{
         border: 1px solid black;
+        background: $background-color;
         display:flex;
         flex-flow: row;
         border-radius: 20px;
         padding: 20px;
         margin-bottom: 5px;
+        
 
         .how_number{
-            border: 1px solid black;
+
             border-radius: 50%;
             margin-left: -30px;
             padding: 0 5px 0 5px;
             background: $purple-color;
             color: white;
+            font-family: 'Roboto', sans-serif;
         }
 
         .how_icon{
-            border: 1px solid black;
+
             margin: 0 15px 0 15px;
             width: 25px;
         }
 
         .how_text{
-            border: 1px solid black;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            width: 100%;
         }
     }
 }

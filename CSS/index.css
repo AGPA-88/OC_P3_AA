@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body, html {
   margin: 0;
   padding: 0;
@@ -16,6 +17,8 @@ h1 {
   border-radius: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f5edff), to(#9356dc));
   background: linear-gradient(#f5edff, #9356dc);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -59,14 +62,15 @@ body {
 }
 
 #top_menu {
-  border: 1px solid black;
   min-height: 250px;
+  background: #f6f6f6;
 }
 
 #top_menu #location {
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   height: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #top_menu #explore {
@@ -78,6 +82,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 #how_to {
@@ -95,13 +100,15 @@ body {
 }
 
 #how_to h3 {
-  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
   text-align: left;
   margin-left: -9px;
 }
 
 #how_to p {
   border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
   border-radius: 25px;
   height: 50px;
   text-align: center;
@@ -109,6 +116,7 @@ body {
 
 #how_to .how_look {
   border: 1px solid black;
+  background: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,22 +130,23 @@ body {
 }
 
 #how_to .how_look .how_number {
-  border: 1px solid black;
   border-radius: 50%;
   margin-left: -30px;
   padding: 0 5px 0 5px;
   background: #9356dc;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 #how_to .how_look .how_icon {
-  border: 1px solid black;
   margin: 0 15px 0 15px;
   width: 25px;
 }
 
 #how_to .how_look .how_text {
-  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  width: 100%;
 }
 
 #restaurants {

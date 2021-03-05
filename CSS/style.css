@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body, html {
   margin: 0;
   padding: 0;
@@ -10,18 +10,29 @@ h1 {
 }
 
 .btn {
-  min-width: 150px;
+  min-width: 50px;
   padding: 0 15px 0 15px;
+  margin: 0 auto 0 auto;
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5edff), to(#9356dc));
-  background: linear-gradient(#f5edff, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+          box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+          box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
 }
 
 footer {
+  min-height: 200px;
   color: white;
   background: #353535;
 }
@@ -36,11 +47,17 @@ footer ul {
   list-style: none;
   padding: 0 0 0 10px;
   margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer ul li {
   margin-top: 5px;
   margin-left: 15px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
 }
 
 footer i {

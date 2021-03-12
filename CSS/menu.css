@@ -1,6 +1,6 @@
 /*BASTILLE PAGE*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body, html {
   margin: 0;
   padding: 0;
@@ -10,19 +10,37 @@ h1 {
   font-family: 'Shrikhand', cursive;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 .btn {
-  min-width: 150px;
+  min-width: 50px;
   padding: 0 15px 0 15px;
+  margin: 0 auto 0 auto;
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5edff), to(#9356dc));
-  background: linear-gradient(#f5edff, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+          box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+          box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
 }
 
 footer {
+  min-height: 200px;
   color: white;
   background: #353535;
+  margin-top: -25px;
 }
 
 footer .logo_footer {
@@ -35,6 +53,7 @@ footer ul {
   list-style: none;
   padding: 0 0 0 10px;
   margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer ul li {
@@ -42,8 +61,45 @@ footer ul li {
   margin-left: 15px;
 }
 
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
 footer i {
   width: 30px;
+}
+
+@-webkit-keyframes option-loading {
+  0% {
+    color: white;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    background-color: #fff;
+    color: black;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+            box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+  }
+}
+
+@keyframes option-loading {
+  0% {
+    color: white;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    background-color: #fff;
+    color: black;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+            box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+  }
 }
 
 body {
@@ -58,20 +114,21 @@ body {
 
 #logo .back_icon {
   padding: 15px;
+}
+
+#logo .back_icon a {
   text-decoration: none;
+  color: black;
 }
 
 #logo .logo_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Shrikhand", cursive;
   font-size: 30px;
-  margin-left: -40px;
-  width: 100%;
+  width: 90%;
+  padding: 0 0 0 20%;
 }
 
 .menu {
@@ -79,12 +136,27 @@ body {
   width: 100%;
 }
 
-.menu_image {
+.menu_image, .menu_image_bastille, .menu_image_fullpalette, .menu_image_enchanted, .menu_image_legourmand {
   height: 250px;
   width: 100%;
-  background-image: url("../images/restaurants/bastille.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.menu_image_bastille {
+  background-image: url("../images/restaurants/bastille.jpg");
+}
+
+.menu_image_fullpalette {
+  background-image: url("../images/restaurants/fullpalette.jpg");
+}
+
+.menu_image_enchanted {
+  background-image: url("../images/restaurants/enchanted.jpg");
+}
+
+.menu_image_legourmand {
+  background-image: url("../images/restaurants/gourmand.jpg");
 }
 
 .separator {
@@ -98,77 +170,230 @@ body {
 .rest_menu {
   background: #f6f6f6;
   margin-top: -25px;
-  /*display: flex;
-    flex-flow: wrap;*/
+  /*
+    .entrees{
+        text-align: center;
+    }
+
+    .main_dish{
+        border: 1px solid black;
+    }
+
+    .desserts{
+        border: 1px solid black;
+    }
+    */
+}
+
+.rest_menu .menu_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rest_menu .heart {
   font-size: 25px;
-  width: 30%;
-  padding: 0 0 0 350px;
-  margin-top: -55px;
+  width: 15%;
+  padding-right: 15px;
 }
 
-.rest_menu .heart i:hover {
-  background: pink;
-  color: hotpink;
+.rest_menu .heart:hover .full_heart {
+  opacity: 1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.rest_menu .heart:hover .empty_heart {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.rest_menu .heart .fa-stack:hover {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.rest_menu .heart .empty_heart {
+  color: black;
+}
+
+.rest_menu .heart .full_heart {
+  background: radial-gradient(ellipse at bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
 }
 
 .rest_menu h1 {
   text-align: left;
+  width: 100%;
+  margin: 0 0 0 15px;
 }
 
 .rest_menu h3 {
   text-align: left;
-  text-decoration: underline;
   font-weight: normal;
+  font-size: medium;
+  margin-left: 15px;
 }
 
-.rest_menu .entrees {
-  border: 1px solid black;
-  text-align: center;
+.rest_menu .underliner {
+  height: 2px;
+  width: 50px;
+  background: #99e2d0;
+  margin: -15px 0 20px 15px;
 }
 
-.rest_menu .main_dish {
-  border: 1px solid black;
+.rest_menu h4 {
+  font-family: 'Roboto', sans-serif;
 }
 
-.rest_menu .desserts {
-  border: 1px solid black;
+.rest_menu p {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 5px;
 }
 
-.rest_menu .btn {
-  margin-left: 30%;
+.rest_menu .order_btn {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
-.options {
+.rest_menu .order_btn .btn {
+  max-width: 370px;
+  margin-left: 25%;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.options, .options1, .options2, .options3, .options4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  border: 1px solid black;
-  border-radius: 25px;
-  background: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  -webkit-animation: option-loading 3s forwards;
+          animation: option-loading 3s forwards;
+  color: white;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  margin: 0 15px 25px 15px;
+  overflow: hidden;
 }
 
-.options .options_title {
+.options .options_display, .options1 .options_display, .options2 .options_display, .options3 .options_display, .options4 .options_display {
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.options .options_title, .options1 .options_title, .options2 .options_title, .options3 .options_title, .options4 .options_title {
   text-align: left;
-  min-width: 400px;
+  min-width: 60%;
+  margin: 5px 0 5px 5px;
 }
 
-.options .options_description {
+.options .options_details, .options1 .options_details, .options2 .options_details, .options3 .options_details, .options4 .options_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.options .options_description, .options1 .options_description, .options2 .options_description, .options3 .options_description, .options4 .options_description {
   text-align: left;
-  min-width: 350px;
+  margin: 0;
+  margin: 0 0 5px 5px;
+  font-size: small;
+  /*text-overflow: ellipsis;
+        background: yellowgreen;    
+        white-space: nowrap;   
+        overflow: hidden;
+        display: block; */
 }
 
-.options .options_price {
-  text-align: right;
+.options .options_price, .options1 .options_price, .options2 .options_price, .options3 .options_price, .options4 .options_price {
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  width: 60px;
+  padding-left: 25px;
 }
 
-.options .options_price:hover {
-  background: green;
+.options .options_check, .options1 .options_check, .options2 .options_check, .options3 .options_check, .options4 .options_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  background: #99e2d0;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.options .options_check i, .options1 .options_check i, .options2 .options_check i, .options3 .options_check i, .options4 .options_check i {
+  color: #fff;
+}
+
+.options:hover, .options1:hover, .options2:hover, .options3:hover, .options4:hover {
+  cursor: pointer;
+}
+
+.options:hover .options_check, .options1:hover .options_check, .options2:hover .options_check, .options3:hover .options_check, .options4:hover .options_check {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.options:hover .options_price, .options1:hover .options_price, .options2:hover .options_price, .options3:hover .options_price, .options4:hover .options_price {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.options:hover i, .options1:hover i, .options2:hover i, .options3:hover i, .options4:hover i {
+  opacity: 1;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.options1 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.options2 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.options3 {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.options4 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 /*# sourceMappingURL=menu.css.map */

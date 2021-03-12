@@ -31,6 +31,10 @@ h1{
     font-family: 'Shrikhand', cursive;
 }
 
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
 .btn{
     min-width: 50px;
     padding: 0 15px 0 15px;
@@ -54,6 +58,7 @@ footer{
     min-height: 200px;
     color: white;
     background: $footer-color;
+    margin-top: -25px;
     
     .logo_footer{
         font-family: "Shrikhand", cursive;
@@ -66,7 +71,7 @@ footer{
         padding: 0 0 0 10px;
         margin-bottom: 30px;
         font-family: 'Roboto', sans-serif;
-        
+
         li{
             margin-top: 5px;
             margin-left: 15px;

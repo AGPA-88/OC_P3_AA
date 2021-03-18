@@ -221,23 +221,27 @@ body{
 
     .options_description{
         text-align: left;
-        //width: 100%;
+        width: 100%;
         margin: 0;
         margin: 0 0 5px 5px;
-        font-size: small;
-        /*text-overflow: ellipsis;
-        background: yellowgreen;    
+        //font-size: small;
+        text-overflow: ellipsis;  
         white-space: nowrap;   
         overflow: hidden;
-        display: block; */
+        font-size: 15px;
+        //white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis; 
     }
 
     .options_price{
         font-family: 'Roboto', sans-serif;
         font-size: smaller;
-        transform: translateX(60px);
+        //transform: translateX(60px);
         width: 60px;
-        padding-left: 25px;
+        padding-left: 15px;
+        transform: translateX(0px);
+        @include option-transition;
         
     }
 
@@ -248,6 +252,12 @@ body{
         width: 60px;
         background: $tertiary;
         transform: translateX(60px);
+        position: absolute;
+        height: 65px;
+        right: -60px;
+        border-radius: 0px 10px 10px 0px;
+        //transition: all 0.6s linear;
+        @include option-transition;
 
         i{
             color: #fff;
@@ -260,11 +270,14 @@ body{
         .options_check{
             transform: translateX(0px);
             @include option-transition;
+            right: 0;
         }
 
         .options_price{
             transform: translateX(0px);
-            @include option-transition;
+           // @include option-transition;
+            margin-right: 60px;
+            
         }
 
         i{

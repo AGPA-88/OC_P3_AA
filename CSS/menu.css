@@ -312,23 +312,24 @@ body {
 
 .options .options_description, .options1 .options_description, .options2 .options_description, .options3 .options_description, .options4 .options_description {
   text-align: left;
+  width: 100%;
   margin: 0;
   margin: 0 0 5px 5px;
-  font-size: small;
-  /*text-overflow: ellipsis;
-        background: yellowgreen;    
-        white-space: nowrap;   
-        overflow: hidden;
-        display: block; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 15px;
 }
 
 .options .options_price, .options1 .options_price, .options2 .options_price, .options3 .options_price, .options4 .options_price {
   font-family: 'Roboto', sans-serif;
   font-size: smaller;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
   width: 60px;
-  padding-left: 25px;
+  padding-left: 15px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .options .options_check, .options1 .options_check, .options2 .options_check, .options3 .options_check, .options4 .options_check {
@@ -345,6 +346,12 @@ body {
   background: #99e2d0;
   -webkit-transform: translateX(60px);
           transform: translateX(60px);
+  position: absolute;
+  height: 65px;
+  right: -60px;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .options .options_check i, .options1 .options_check i, .options2 .options_check i, .options3 .options_check i, .options4 .options_check i {
@@ -360,13 +367,13 @@ body {
           transform: translateX(0px);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+  right: 0;
 }
 
 .options:hover .options_price, .options1:hover .options_price, .options2:hover .options_price, .options3:hover .options_price, .options4:hover .options_price {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  margin-right: 60px;
 }
 
 .options:hover i, .options1:hover i, .options2:hover i, .options3:hover i, .options4:hover i {

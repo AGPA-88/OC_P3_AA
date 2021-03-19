@@ -236,6 +236,7 @@ body {
   text-align: left;
   width: 100%;
   margin: 0 0 0 15px;
+  font-size: 25px;
 }
 
 .rest_menu h3 {
@@ -328,8 +329,8 @@ body {
   padding-left: 15px;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .options .options_check, .options1 .options_check, .options2 .options_check, .options3 .options_check, .options4 .options_check {
@@ -350,8 +351,8 @@ body {
   height: 65px;
   right: -60px;
   border-radius: 0px 10px 10px 0px;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .options .options_check i, .options1 .options_check i, .options2 .options_check i, .options3 .options_check i, .options4 .options_check i {
@@ -365,14 +366,16 @@ body {
 .options:hover .options_check, .options1:hover .options_check, .options2:hover .options_check, .options3:hover .options_check, .options4:hover .options_check {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
   right: 0;
 }
 
 .options:hover .options_price, .options1:hover .options_price, .options2:hover .options_price, .options3:hover .options_price, .options4:hover .options_price {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
   margin-right: 60px;
 }
 
@@ -380,8 +383,8 @@ body {
   opacity: 1;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .options1 {

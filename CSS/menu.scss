@@ -2,7 +2,7 @@
 @import "style.scss";
 
 @mixin option-transition{
-    transition: 1s ease-in-out; 
+    transition: 0.8s ease-in-out; 
 }
 
 @keyframes option-loading{
@@ -139,6 +139,7 @@ body{
         text-align: left;
         width: 100%;
         margin: 0 0 0 15px;
+        font-size: 25px;
     }
 
     h3{  
@@ -224,7 +225,6 @@ body{
         width: 100%;
         margin: 0;
         margin: 0 0 5px 5px;
-        //font-size: small;
         text-overflow: ellipsis;  
         white-space: nowrap;   
         overflow: hidden;
@@ -256,7 +256,6 @@ body{
         height: 65px;
         right: -60px;
         border-radius: 0px 10px 10px 0px;
-        //transition: all 0.6s linear;
         @include option-transition;
 
         i{
@@ -275,7 +274,7 @@ body{
 
         .options_price{
             transform: translateX(0px);
-           // @include option-transition;
+            @include option-transition;
             margin-right: 60px;
             
         }

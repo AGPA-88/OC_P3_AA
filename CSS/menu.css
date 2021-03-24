@@ -40,13 +40,12 @@ footer {
   min-height: 200px;
   color: white;
   background: #353535;
-  margin-top: -25px;
 }
 
 footer .logo_footer {
   font-family: "Shrikhand", cursive;
   font-size: large;
-  margin: 25px;
+  padding: 25px 0 0 25px;
 }
 
 footer ul {
@@ -165,6 +164,14 @@ body {
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   margin-top: -50px;
+}
+
+@media screen and (min-width: 768px) {
+  .separator {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 5px;
+  }
 }
 
 .rest_menu {

@@ -1,4 +1,5 @@
 @import "style.scss";
+@import "loader.scss";
 
 main{
     width: 100%;
@@ -8,106 +9,16 @@ body{
     margin: 0;
 }
 
-
-
-.loader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-    margin-top: -15px;
-    background-color: #313131;
-    -webkit-animation-name: fade;
-    animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
-  @-webkit-keyframes fade {
-    0% {
-      -webkit-transform: translateY(0%);
-      transform: translateY(0%);
-    }
-    100% {
-      -webkit-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-  }
-  @keyframes fade {
-    0% {
-      -webkit-transform: translateY(0%);
-      transform: translateY(0%);
-    }
-    100% {
-      -webkit-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-  }
-  .primary-circle {
-    width: 150px;
-    height: 150px;
-    border: 4px solid #9356dc;
-    border-top: 4px solid transparent;
-    border-radius: 50%;
-    -webkit-animation: rotate 1.5s infinite;
-    animation: rotate 1.5s infinite;
-  }
-  .secondary-circle {
-    -webkit-animation: rotate 1.5s infinite 0.1s;
-    animation: rotate 1.5s infinite 0.1s;
-    width: 120px;
-    height: 120px;
-    border: 4px solid #ff79da;
-    border-top: 4px solid transparent;
-    border-radius: 50%;
-    position: absolute;
-  }
-  .tertiary-circle {
-    -webkit-animation: rotate 1.5s infinite 0.2s;
-    animation: rotate 1.5s infinite 0.2s;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border: 4px solid #99e2d0;
-    border-top: 4px solid transparent;
-    border-radius: 50%;
-  }
-  @-webkit-keyframes rotate {
-    from {
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotate {
-    from {
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-
 .logo{
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+
+    @include tablet-view-up{
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
 }
 
 #top_menu{
@@ -134,8 +45,9 @@ body{
         }
 
         p{
-            display: flex;
-            flex-flow: wrap;
+            //display: flex;
+            //flex-flow: wrap;
+            display: block;
             max-width: 100%;
             margin-left: 30px;
             margin-right: 30px;
@@ -151,6 +63,13 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
+
+    @include tablet-view-up{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     
 
     h3{
@@ -158,6 +77,7 @@ body{
         font-weight: bolder;
         text-align: left;
         //margin-left: -9px;
+
     }
 
     p{
@@ -176,6 +96,13 @@ body{
         border-radius: 20px;
         padding: 20px;
         margin-bottom: 20px;
+
+        @include tablet-view-up{
+            margin: 20px;
+            height: 20px;
+            width: 250px;
+        }
+
 
         &:hover{
             background: fade-out($color: $primary_light, $amount: 0.8);
@@ -208,6 +135,10 @@ body{
             font-family: 'Roboto', sans-serif;
             font-weight: bolder;
             width: 100%;
+
+            @include tablet-view-up{
+                margin-top: -5px;
+            }
         }
     }
 }
@@ -317,8 +248,4 @@ body{
         }
 
     }
-}
-
-footer{
-    margin-top: -25px;
 }

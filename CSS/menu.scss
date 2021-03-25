@@ -24,11 +24,17 @@ body{
 
 #logo{
     display: flex;
+
+    @include tablet-view-up{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
     
     
     
     .back_icon{
         padding: 15px;
+
 
         a{
             text-decoration: none;
@@ -53,7 +59,6 @@ body{
 .menu_image{
     height: 250px;
     width: 100%;    
-    //background-image: url("../images/restaurants/bastille.jpg"); 
     background-position: center;
     background-size: cover;
 }
@@ -81,7 +86,7 @@ body{
 .separator{
     background: $background-color;
     height: 50px;
-    border-top-left-radius: 100px ;
+    border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     margin-top: -50px;
 
@@ -105,8 +110,13 @@ body{
 
     .heart{
         font-size: 25px;
-        width: 15%;
-        padding-right: 15px;
+        width: 60px;
+        padding-right: 20px;
+
+        @include tablet-view-up{
+            padding-right: 25px;
+        }
+
 
         &:hover {
             .full_heart{
@@ -172,29 +182,28 @@ body{
         font-family: 'Roboto', sans-serif;
         padding-bottom: 5px;
     }
-    /*
-    .entrees{
-        text-align: center;
-    }
 
-    .main_dish{
-        border: 1px solid black;
-    }
-
-    .desserts{
-        border: 1px solid black;
-    }
-    */
     .order_btn{
         padding-top: 50px;
         padding-bottom: 100px;
+        text-align: center;
 
         .btn{
             max-width: 370px;
             margin-left: 25%;
+            margin-right: 25%;
             padding-left: 75px;
             padding-right: 75px;
+
+            @include tablet-view-up{
+                padding: 0;
+                text-align: center;
+                margin-left: 40%;
+                margin-right: 40%;
+            }
         }
+
+ 
     }
 
 }
@@ -219,6 +228,10 @@ body{
         text-align: left;
         min-width: 60%;
         margin: 5px 0 5px 5px;
+        text-overflow: ellipsis;  
+        white-space: nowrap;   
+        overflow: hidden;
+        
     }
 
     .options_details{
@@ -235,9 +248,7 @@ body{
         white-space: nowrap;   
         overflow: hidden;
         font-size: 15px;
-        //white-space: nowrap;
-        //overflow: hidden;
-        //text-overflow: ellipsis; 
+        
     }
 
     .options_price{
@@ -271,6 +282,12 @@ body{
 
     &:hover{
         cursor: pointer;
+        @include option-transition;
+        
+        .options_title{
+            width: calc(100% - 120px);
+            
+        }
 
         .options_check{
             transform: translateX(0px);

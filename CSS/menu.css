@@ -111,6 +111,13 @@ body {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  #logo {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
 #logo .back_icon {
   padding: 15px;
 }
@@ -177,19 +184,6 @@ body {
 .rest_menu {
   background: #f6f6f6;
   margin-top: -25px;
-  /*
-    .entrees{
-        text-align: center;
-    }
-
-    .main_dish{
-        border: 1px solid black;
-    }
-
-    .desserts{
-        border: 1px solid black;
-    }
-    */
 }
 
 .rest_menu .menu_header {
@@ -206,8 +200,14 @@ body {
 
 .rest_menu .heart {
   font-size: 25px;
-  width: 15%;
-  padding-right: 15px;
+  width: 60px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .rest_menu .heart {
+    padding-right: 25px;
+  }
 }
 
 .rest_menu .heart:hover .full_heart {
@@ -272,13 +272,24 @@ body {
 .rest_menu .order_btn {
   padding-top: 50px;
   padding-bottom: 100px;
+  text-align: center;
 }
 
 .rest_menu .order_btn .btn {
   max-width: 370px;
   margin-left: 25%;
+  margin-right: 25%;
   padding-left: 75px;
   padding-right: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  .rest_menu .order_btn .btn {
+    padding: 0;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
 }
 
 .options, .options1, .options2, .options3, .options4 {
@@ -307,6 +318,9 @@ body {
   text-align: left;
   min-width: 60%;
   margin: 5px 0 5px 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .options .options_details, .options1 .options_details, .options2 .options_details, .options3 .options_details, .options4 .options_details {
@@ -368,6 +382,12 @@ body {
 
 .options:hover, .options1:hover, .options2:hover, .options3:hover, .options4:hover {
   cursor: pointer;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.options:hover .options_title, .options1:hover .options_title, .options2:hover .options_title, .options3:hover .options_title, .options4:hover .options_title {
+  width: calc(100% - 120px);
 }
 
 .options:hover .options_check, .options1:hover .options_check, .options2:hover .options_check, .options3:hover .options_check, .options4:hover .options_check {

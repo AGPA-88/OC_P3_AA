@@ -64,10 +64,12 @@ body{
     flex-direction: column;
     padding: 20px;
 
-    @include tablet-view-up{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    @include desktop-view-up{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 25px auto ;
+        grid-gap: 15px;
+        min-height: 50px;
     }
 
     
@@ -77,6 +79,10 @@ body{
         font-weight: bolder;
         text-align: left;
         //margin-left: -9px;
+
+        @include desktop-view-up{
+            grid-column: 1 / span 3;
+        }
 
     }
 
@@ -97,7 +103,7 @@ body{
         padding: 20px;
         margin-bottom: 20px;
 
-        @include tablet-view-up{
+        @include desktop-view-up{
             margin: 20px;
             height: 20px;
             width: 250px;
@@ -147,11 +153,23 @@ body{
     padding: 10px 20px 30px 20px;
     background: #f6f6f6;
 
+    @include tablet-view-up{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-gap: 15px;
+    }
+    
+
     .menu{
 
         display: flex;
         flex-direction: column;
         gap: 0px;
+
+        @include tablet-view-up{
+            min-width: 350px;
+        }
+        
         
         a{
             border: none;
@@ -167,6 +185,11 @@ body{
         font-size: larger;
         font-weight: bolder;
         padding: 60px 0 30px 0;
+
+        @include tablet-view-up{
+            grid-column: 1 / span 2;
+            padding-top: 25px;
+        }
         
     }
 

@@ -33,7 +33,6 @@ body{
         font-family: 'Roboto', sans-serif;
     }
 
-
     #explore{
         display: flex;
         flex-direction: column;
@@ -45,16 +44,12 @@ body{
         }
 
         p{
-            //display: flex;
-            //flex-flow: wrap;
             display: block;
             max-width: 100%;
             margin-left: 30px;
             margin-right: 30px;
         }
-
     }
-
 }
 
 #how_to{
@@ -169,8 +164,7 @@ body{
         @include tablet-view-up{
             min-width: 350px;
         }
-        
-        
+
         a{
             border: none;
             padding: 0;
@@ -201,6 +195,24 @@ body{
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;   
         //@include omf-shadow;  
+
+    }
+
+    .tag{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $tertiary;
+        width: 80px;
+        height: 30px;
+        margin-bottom: -40px;
+        margin-left: 250px;
+        z-index: 9;
+        border-radius: 3px;
+        @include omf-shadow;
     }
 }
 
@@ -216,9 +228,7 @@ body{
     .rest_desc{
         width: 85%;
         padding: 5px 0 0 10px;
-        font-family: 'Roboto', sans-serif;
-        
-        
+        font-family: 'Roboto', sans-serif;        
 
         h3{
             margin: 0;
@@ -233,7 +243,6 @@ body{
         font-size: 25px;
         width: 15%;
         padding: 0 10px 0 0;
-        //color: red;
 
         &:hover {
             .full_heart{
@@ -251,7 +260,6 @@ body{
         .fa-stack{
 
             &:hover {
-                //transform: rotate(-360deg);
                 transition: 1.5s;
 
               }

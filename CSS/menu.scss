@@ -24,30 +24,42 @@ body{
 
 #logo{
     display: flex;
+    width: 100%;
+    
 
     @include tablet-view-up{
-        margin-left: 30%;
-        margin-right: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    
-    
     
     .back_icon{
         padding: 15px;
-
+        width: 30px;
+        @include tablet-view-up{
+            position: relative;
+            left: 0;
+            top: 0;
+        }
 
         a{
             text-decoration: none;
             color: black;
+
         }
     }
 
     .logo_menu{
+        display: flex;
         justify-content: center;
         font-family: "Shrikhand", cursive;
         font-size: 30px;
-        width: 90%;
-        padding: 0 0 0 20%;
+        width: 100%;
+        transform: translateX(-15px);
+
+        @include tablet-view-up{
+            display: flex;
+        }
     }
 }
 
@@ -61,6 +73,12 @@ body{
     width: 100%;    
     background-position: center;
     background-size: cover;
+
+    @include tablet-view-up{
+        display: flex;
+        justify-content: center;
+        height: 350px
+    }
 }
 
 .menu_image_bastille{
@@ -169,8 +187,6 @@ body{
         height: 2px;
         width: 50px;
         background: $tertiary;
-        //margin-bottom: 20px;
-        //margin-top: -20px;
         margin: -15px 0 20px 15px;
     }
 
@@ -283,7 +299,7 @@ body{
     &:hover{
         cursor: pointer;
         @include option-transition;
-        
+
         .options_title{
             width: calc(100% - 120px);
             

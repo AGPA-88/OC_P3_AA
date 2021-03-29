@@ -67,13 +67,11 @@ body{
         min-height: 50px;
     }
 
-    
 
     h3{
         font-family: 'Roboto', sans-serif;
         font-weight: bolder;
         text-align: left;
-        //margin-left: -9px;
 
         @include desktop-view-up{
             grid-column: 1 / span 3;
@@ -193,26 +191,31 @@ body{
         object-position: 70%;
         width: 100%;
         border-top-left-radius: 15px;
-        border-top-right-radius: 15px;   
-        //@include omf-shadow;  
+        border-top-right-radius: 15px;    
 
     }
 
     .tag{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        color: green;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $tertiary;
-        width: 80px;
-        height: 30px;
+        justify-content: flex-end;
+        padding-right: 10px;
         margin-bottom: -40px;
-        margin-left: 250px;
-        z-index: 9;
-        border-radius: 3px;
-        @include omf-shadow;
+  
+        .new_tag{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $tertiary;
+            width: 80px;
+            height: 30px;
+            z-index: 9;
+            border-radius: 3px;
+            @include omf-shadow;
+        }
+
     }
 }
 

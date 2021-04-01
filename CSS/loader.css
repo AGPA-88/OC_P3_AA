@@ -92,8 +92,8 @@ footer i {
           animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 @-webkit-keyframes fade {
@@ -120,7 +120,7 @@ footer i {
   }
 }
 
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+@supports not ((-webkit-filter: none) or (filter: none)) {
   .spinner_container {
     background-color: rgba(255, 255, 255, 0.9);
   }

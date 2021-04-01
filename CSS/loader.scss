@@ -13,7 +13,7 @@
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    backdrop-filter: blur(10px);
+    filter: blur(10px);
 
     @keyframes fade {
       0% {
@@ -28,7 +28,7 @@
 
 // Firefox hack for background blur
 
-  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  @supports not ((-webkit-filter: none) or (filter: none)) {
     .spinner_container {
       background-color: rgba(255, 255, 255, .9);
     }

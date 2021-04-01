@@ -7,21 +7,19 @@ $footer-color:#353535;
 $background-color: #f6f6f6;
 $active-color: #f5edff;
 $primary: #9356dc;
+$primary_light: lighten($primary, 10) ;
 $secondary: #ff79da;
+$secondary_light: lighten($secondary, 10);
 $tertiary: #99e2d0;
-$btn-color: #b160dc;
-$primary_light: lighten(#9356dc, 10) ;
-$secondary_light: lighten(#ff79da, 10);
+$tertiary_dark: darken($tertiary, 40);
 
 //MIXIN
 @mixin omf-shadow{
     box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
-
 }
 
 @mixin omf-shadow-darken{
     box-shadow: 0px 10px 10px 0px darken(rgba(38, 37, 37, 0.1), 10);
-    
 }
 
 

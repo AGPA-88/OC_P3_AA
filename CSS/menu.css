@@ -166,11 +166,10 @@ body {
 }
 
 .menu {
-  background: green;
   width: 100%;
 }
 
-.menu_image, .menu_image_bastille, .menu_image_fullpalette, .menu_image_enchanted, .menu_image_legourmand {
+.menu_image {
   height: 250px;
   width: 100%;
   background-position: center;
@@ -178,7 +177,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .menu_image, .menu_image_bastille, .menu_image_fullpalette, .menu_image_enchanted, .menu_image_legourmand {
+  .menu_image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

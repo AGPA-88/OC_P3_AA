@@ -152,9 +152,7 @@ body{
         grid-gap: 15px;
     }
     
-
     .menu{
-
         display: flex;
         flex-direction: column;
         gap: 0px;
@@ -181,8 +179,7 @@ body{
         @include tablet-view-up{
             grid-column: 1 / span 2;
             padding-top: 25px;
-        }
-        
+        } 
     }
 
     .menu_image{
@@ -192,7 +189,6 @@ body{
         width: 100%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;    
-
     }
 
     .tag{
@@ -204,7 +200,7 @@ body{
         .new_tag{
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
-            color: green;
+            color: $tertiary_dark;
             display: flex;
             justify-content: center;
             align-items: center;

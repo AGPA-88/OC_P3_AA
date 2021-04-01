@@ -62,8 +62,7 @@ body{
     }
 }
 
-.menu{
-    background: green; 
+.menu{ 
     width: 100%;
     
 }
@@ -81,22 +80,18 @@ body{
 }
 
 .menu_image_bastille{
-    @extend .menu_image;
     background-image: url("../images/restaurants/bastille.jpg");
 }
 
 .menu_image_fullpalette{
-    @extend .menu_image;
     background-image: url("../images/restaurants/fullpalette.jpg");
 }
 
 .menu_image_enchanted{
-    @extend .menu_image;
     background-image: url("../images/restaurants/enchanted.jpg");
 }
 
 .menu_image_legourmand{
-    @extend .menu_image;
     background-image: url("../images/restaurants/gourmand.jpg");
 }
 

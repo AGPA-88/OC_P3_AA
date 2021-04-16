@@ -19,4 +19,4 @@ Requirements:
 
 Link to website:
 
-	- [ohmyfood](https://agpa-88.github.io/OC_P3_AA/) ;
+	- (ohmyfood)[https://agpa-88.github.io/OC_P3_AA/] ;

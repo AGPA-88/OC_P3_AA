@@ -18,5 +18,4 @@ Requirements:
 	- Font used for the logo is Shrikhand and for the text is Roboto;
 
 Link to website:
-
-	- [ohmyfood](https://agpa-88.github.io/OC_P3_AA/)
+	[ohmyfood](https://agpa-88.github.io/OC_P3_AA/)

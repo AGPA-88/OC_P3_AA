@@ -16,3 +16,7 @@ Requirements:
 	- Icons from the Font Awesome library;
 	- Colors (primary #9356DC | secondary #FF79DA| tertiary #99E2D0);
 	- Font used for the logo is Shrikhand and for the text is Roboto;
+
+Link to website:
+
+	- [ohmyfood](https://agpa-88.github.io/OC_P3_AA/) ;
